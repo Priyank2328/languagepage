@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
           children: [
             Text("Language"),
             PopupMenuButton(
-              icon: Icon(Icons.more_vert,color: Colors.black,),
+              icon: Icon(Icons.more_vert,color: Colors.white,),
               onSelected: (value) {
                 // if value 1 show dialog
                 if (value == 1)
@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
                 }
                 else if (value == 2)
                 {
-                  context.setLocale(Locale('ar'));
+                  context.setLocale(Locale('fr'));
                 }
                 else if (value == 3)
                 {
@@ -39,7 +39,7 @@ class Home extends StatelessWidget {
                     value: 1,
                   ),
                   PopupMenuItem(
-                    child: Text("Arabic"),
+                    child: Text("French"),
                     value: 2,
                   ),
                   PopupMenuItem(

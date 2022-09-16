@@ -14,9 +14,9 @@ class CodegenLoader extends AssetLoader {
     return Future.value(mapLocales[locale.toString()]);
   }
 
-  static const Map<String, dynamic> ar = {
-    "hi_text": "أهلا، أنا يزيد!",
-    "this_should_be_translated": "يجب ترجمة هذا إلى العربية!"
+  static const Map<String, dynamic> fr = {
+    "hi_text": "Salut, je suis Yazeed!",
+    "this_should_be_translated": "Cela devrait être traduit en arabe!"
   };
   static const Map<String, dynamic> gu = {
     "hi_text": "હાય, હું યઝીદ છું!",
@@ -31,7 +31,7 @@ class CodegenLoader extends AssetLoader {
     "this_should_be_translated": "This should be translated to Arabic!"
   };
   static const Map<String, Map<String, dynamic>> mapLocales = {
-    "ar": ar,
+    "fr": fr,
     "en": en,
     "gu" : gu,
     "ru" : ru,
